@@ -1,0 +1,403 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f5f2;
+    color: #26332d;
+    line-height: 1.7;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(120deg, #123d2b, #247447);
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    line-height: 1.4;
+}
+
+.logo span {
+    color: #ffb347;
+}
+
+.logo p {
+    font-size: 14px;
+    color: #e4f1e8;
+}
+
+/* MENU NAVIGASI */
+nav {
+    background-color: #172a21;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 13px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #f39c36;
+    color: #172a21;
+}
+
+
+.breaking strong {
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.breaking marquee {
+    font-size: 14px;
+}
+
+/* KONTEN UTAMA */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+/* BERITA UTAMA */
+.headline {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+.headline > img {
+    width: 100%;
+    height: 100%;
+    min-height: 330px;
+    object-fit: cover;
+}
+
+.headline-text {
+    padding: 25px;
+    align-self: center;
+}
+
+.headline-text h2 {
+    font-size: 25px;
+    line-height: 1.4;
+    margin: 12px 0;
+    color: #193d2b;
+}
+
+.headline-text p {
+    margin-bottom: 12px;
+}
+
+/* KATEGORI DAN TANGGAL */
+.kategori {
+    display: inline-block;
+    background-color: #e5f3e8;
+    color: #23683d;
+    padding: 3px 9px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.tanggal {
+    color: #777;
+    font-size: 12px;
+    margin: 12px 0;
+}
+
+/* TOMBOL DAN LINK */
+.tombol {
+    display: inline-block;
+    background-color: #247447;
+    color: white;
+    text-decoration: none;
+    padding: 9px 16px;
+    border-radius: 5px;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.tombol:hover {
+    background-color: #f39c36;
+    color: #172a21;
+}
+
+a {
+    color: #247447;
+}
+
+a:hover {
+    color: #e65c32;
+}
+
+/* JUDUL BAGIAN */
+.judul {
+    margin: 35px 0 18px;
+    padding-left: 12px;
+    border-left: 5px solid #f39c36;
+    color: #193d2b;
+}
+
+/* KARTU BERITA */
+.kartu-berita {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.kartu {
+    background-color: white;
+    border-radius: 9px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px #00000012;
+    transition: transform 0.2s;
+}
+
+.kartu:hover {
+    transform: translateY(-4px);
+}
+
+.kartu img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.isi-kartu {
+    padding: 18px;
+}
+
+.isi-kartu h3 {
+    color: #193d2b;
+    font-size: 17px;
+    line-height: 1.4;
+    margin: 10px 0;
+}
+
+.isi-kartu p {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.isi-kartu a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* KOTAK INFORMASI */
+.info {
+    margin: 35px 0;
+    padding: 25px;
+    background-color: #e5f0e7;
+    border-left: 5px solid #247447;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.info h2 {
+    color: #193d2b;
+    margin-bottom: 10px;
+}
+
+/* HALAMAN BERITA */
+.halaman-berita {
+    background-color: white;
+    padding: 30px;
+    border-radius: 9px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+.breadcrumb {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.halaman-berita article > h1 {
+    font-size: 31px;
+    line-height: 1.4;
+    color: #193d2b;
+    margin: 12px 0;
+}
+
+.halaman-berita article > h2 {
+    color: #193d2b;
+    font-size: 23px;
+    margin: 25px 0 12px;
+    border-bottom: 2px solid #e5eee7;
+    padding-bottom: 6px;
+}
+
+.halaman-berita article > p {
+    text-align: justify;
+    margin: 15px 0;
+}
+
+.gambar-utama {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-top: 15px;
+}
+
+.gambar-isi {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin: 12px 0;
+}
+
+.caption {
+    color: #777;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.halaman-berita ul,
+.halaman-berita ol {
+    padding-left: 25px;
+    margin: 12px 0;
+}
+
+.halaman-berita li {
+    margin-bottom: 7px;
+}
+
+/* TABEL DATA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #d6dfd8;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #247447;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f5f1;
+}
+
+.catatan {
+    color: #666;
+    font-size: 13px;
+}
+
+.sumber {
+    background-color: #f4f7f4;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 7px;
+}
+
+.sumber h3 {
+    color: #193d2b;
+    margin-bottom: 10px;
+}
+
+.sumber p {
+    overflow-wrap: anywhere;
+}
+
+.kembali {
+    margin-top: 25px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background-color: #172a21;
+    color: white;
+    text-align: center;
+    padding: 22px 15px;
+    margin-top: 35px;
+    font-size: 13px;
+}
+
+footer a {
+    color: #ffb347;
+    text-decoration: none;
+}
+
+/* TAMPILAN HP */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 94%;
+    }
+
+    .logo h1 {
+        font-size: 26px;
+    }
+
+    .headline {
+        grid-template-columns: 1fr;
+    }
+
+    .headline > img {
+        min-height: 220px;
+        height: 250px;
+    }
+
+    .headline-text h2 {
+        font-size: 22px;
+    }
+
+    .kartu-berita {
+        grid-template-columns: 1fr;
+    }
+
+    .kartu img {
+        height: 220px;
+    }
+
+    .halaman-berita {
+        padding: 18px;
+    }
+
+    .halaman-berita article > h1 {
+        font-size: 25px;
+    }
+
+    .breaking {
+        align-items: flex-start;
+    }
+
+    nav {
+        justify-content: flex-start;
+    }
+}
